@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Advanced Form</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="progress-container">
+<div id="progressBar"></div>
+</div>
+
+<div id="app">
+
+<!-- PAGE 1 -->
+
+<div id="registerPage">
+
+<h1>Create Account</h1>
+
+<form id="form">
+
+<input type="text" id="name" placeholder="Full Name">
+
+<input type="email" id="email" placeholder="Email">
+
+<div class="password-box">
+<input type="password" id="password" placeholder="Password">
+<div id="strengthMeter"></div>
+<span id="strengthText"></span>
+</div>
+
+<input type="password" id="confirm" placeholder="Confirm Password">
+
+<div id="phoneContainer"></div>
+
+<button type="button" id="addPhone">Add Phone</button>
+
+<button type="submit">Register</button>
+
+</form>
+
+</div>
+
+<!-- PAGE 2 -->
+
+<div id="successPage">
+
+<h1>Registration Successful 🎉</h1>
+
+<p id="welcomeMsg"></p>
+
+<button onclick="goBack()">Register Another</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
